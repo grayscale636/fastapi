@@ -7,6 +7,6 @@ services:
     ports:
       - "8001:8000"
     volumes:
-      - ./app:/app/app  # Optional: untuk hot reload (lihat bagian optional di bawah)
+      - ./app:/app/app
     restart: unless-stopped
 
