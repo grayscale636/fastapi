@@ -1,0 +1,12 @@
+version: "3.2"
+
+services:
+  web:
+    build: .
+    container_name: fastapi_app
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./app:/app/app  # Optional: untuk hot reload (lihat bagian optional di bawah)
+    restart: unless-stopped
+
