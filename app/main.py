@@ -5,5 +5,5 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello from Uvicorn in Docker!"}
+    return {"message": "Hello from Uvicorn in Docker, it worked!"}
 
